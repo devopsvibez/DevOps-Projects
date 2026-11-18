@@ -1,5 +1,0 @@
-# Copy this file to terraform.tfvars and put YOUR public IP below.
-# Find your IP: open https://whatismyip.com in your browser.
-# Keep the /32 at the end - it means "only this one IP".
-
-my_ip = "103.15.61.92/32"
