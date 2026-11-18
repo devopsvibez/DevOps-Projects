@@ -117,6 +117,14 @@ resource "aws_security_group" "project_sg" {
     cidr_blocks = [aws_vpc.main.cidr_block]
   }
 
+  ingress {
+    description = "All traffic between our own servers"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    self        = true
+  }
+
   egress {
     description = "Allow all outbound"
     from_port   = 0
