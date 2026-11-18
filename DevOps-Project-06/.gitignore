@@ -1,6 +1,6 @@
 ./target/*
 *.pem
 *.tfstate
-.tfstate.
 .terraform/
 terraform.tfvars
+*.tfstate.*
